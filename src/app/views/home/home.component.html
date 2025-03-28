@@ -1,6 +1,19 @@
-<mat-card class="centered">
-  <h1>Bienvenido a Product Store</h1>
-  <button mat-raised-button color="primary" routerLink="/products">
-    <mat-icon>storefront</mat-icon> Ver Productos
-  </button>
-</mat-card>
+<div class="container text-center mt-5">
+  <mat-card>
+    <mat-card-header>
+      <mat-icon aria-hidden="false">storefront</mat-icon>
+      <span class="ms-2">Bienvenido a Product Store</span>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Explora nuestra amplia gama de productos</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" routerLink="/products">
+        <mat-icon>storefront</mat-icon> Ver Productos
+      </button>
+      <button mat-raised-button color="primary" routerLink="/about">
+        <mat-icon>storefront</mat-icon> Nosotros
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

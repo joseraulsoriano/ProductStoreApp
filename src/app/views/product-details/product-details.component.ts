@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-product-details',
-  imports: [],
+  standalone: true,
+  imports: [MatCardModule, RouterModule], // Importa MatCardModule
   templateUrl: './product-details.component.html',
-  styleUrl: './product-details.component.css'
+  styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent {
   producto = {
@@ -14,7 +18,7 @@ export class ProductDetailsComponent {
     description: 'Un smartphone con pantalla AMOLED, cámara triple y bateria de larga duración.',
   };
   agregarAlCarrito() {
-    alert('Producto agregado al carrito( ESTTO ES UNA SIMULACION)');
+    alert('Producto agregado al carrito( ESTO ES UNA SIMULACION)');
 
 }
 }
