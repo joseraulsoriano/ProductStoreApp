@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <mat-card class="p-3">
+    <h3>Detalles del Producto</h3>
+    <p><strong>ID:</strong>{{ producto.id }}</p>
+    <p><strong>Nombre:</strong>{{ producto.name }}</p>
+    <p><strong>Descripción:</strong>{{ producto.description }}</p>
+    <p><strong>Precio:</strong>{{ producto.price }}</p>
+
+    <div class="mt-3">
+      <button mat-raised-button color="primary" (click)="agregarAlCarrito()">
+        Agregar al Carrito
+      </button>
+      <button
+        mat-raised-button
+        color="accent"
+        routerLink="/products"
+        class="ml-2"
+      >
+        Volver a productos
+      </button>
+    </div>
+  </mat-card>
+</div>
